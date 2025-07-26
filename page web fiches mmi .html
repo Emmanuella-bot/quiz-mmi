@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fiches Métiers - Digital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #FFFFFF; /* blanc pur */
+      overflow-x: hidden;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      z-index: 0;
+    }
+
+    /* Un filtre sur le fond image via pseudo élément */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5); /* voile sombre pour bien contraster */
+      z-index: -1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 2.5em;
+      color: #EF7D1B; /* orange vif */
+      position: relative;
+      z-index: 1;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card {
+      background: rgba(16, 18, 34, 0.85);
+      border-radius: 15px;
+      padding: 20px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      animation: fadeInUp 1s forwards;
+    }
+
+    .card:nth-child(odd) {
+      animation-delay: 0.2s;
+    }
+
+    .card:nth-child(even) {
+      animation-delay: 0.4s;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.9);
+    }
+
+    .card h3 {
+      margin-bottom: 20px;
+      color: #FFFFFF; /* blanc pur */
+      position: relative;
+      z-index: 2;
+    }
+
+    .card a {
+      display: inline-block;
+      background-color: #EF7D1B; /* orange vif */
+      color: #FFFFFF; /* blanc pur */
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card a:hover {
+      background-color: #ff913b; /* un orange plus clair au hover */
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fiches Métiers du Digital</h1>
+
+  <div class="container">
+    <div class="card">
+      <h3>Webdesigner</h3>
+      <a href="https://drive.google.com/file/d/1Vg9_zi194pNVOzOdXqX5U9ZcZ996Z2S2/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>UI/UX Designer</h3>
+      <a href="https://drive.google.com/file/d/1M0iXnCgpBPC-91cW8KzyJWahh1WqoxVH/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Développeur Front-End</h3>
+      <a href="https://drive.google.com/file/d/1eO7CL4rA2fR4-ISE3c7aJt9uOHBK77n0/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Intégrateur Web</h3>
+      <a href="https://drive.google.com/file/d/1uDSEsrAqE-SD_J6WHg5G9D8QXnuACmj2/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Monteur Vidéo</h3>
+      <a href="https://drive.google.com/file/d/1DoczdKiLOz7az3um96ytBR1Ch8TpnnWD/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Motion Designer</h3>
+      <a href="https://drive.google.com/file/d/1YJs3k9aazz7--RNX9MiGJdyItGcbS_0c/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Community Manager</h3>
+      <a href="https://drive.google.com/file/d/1u83ksPG4nY8dZcHuaaan6O-pqevhPUWd/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Rédacteur Web SEO</h3>
+      <a href="https://drive.google.com/file/d/1TGqsFAIIqpUdJJ3oqrk8ee9QJ5Nhsqbl/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Trafic Manager</h3>
+      <a href="https://drive.google.com/file/d/1oePN8I57mK6f4Jn25jsNFPEW3ThCM5SL/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+    <div class="card">
+      <h3>Chef de Projet Digital</h3>
+      <a href="https://drive.google.com/file/d/1b4II5A7fByjvOt2smNy9ZF7rpVInMVB6/view?usp=sharing" target="_blank" rel="noopener noreferrer">Consulter</a>
+    </div>
+  </div>
+
+</body>
+</html>
